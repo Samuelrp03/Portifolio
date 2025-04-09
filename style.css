@@ -1,126 +1,200 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    background-color: #eee;
 }
 
-#cabecalho {
-    background-color: #e5e5e5;
-    padding: 10px;
-    text-align: center;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom: 3px solid #acacac;
+@media screen and (max-width: 600px) {
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.8em;
+        box-shadow: 0px 0px 5px #33333380;
+    }
+
+    section {
+        background-color: #bbb;
+        padding: 20px 0;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .card-top {
+        box-shadow: 0px 0px 5px #33333380;
+        text-align: center;
+    }
+    .card-top img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: #333 solid 3px;
+    }
+
+    .card-top .informacoes {
+        padding: 10px;
+    }
+
+    .card-top .informacoes h2 {
+        margin-bottom: 10px;
+    }
+
+    .card-top .informacoes p {
+        margin-bottom: 3px;
+        text-align: left;
+    }
+
+    .card-top .informacoes a {
+        text-decoration: none;
+        color: #555;
+        padding: 2px 5px;
+    }
+
+    .card-top .informacoes a:hover {
+        background-color: #555;
+        border-radius: 5px;
+        color: #bbb;
+    }
+
+    .card .title {
+        background-color: #333;
+        color: #fff;
+        width: 70%;
+        padding: 5px;
+        text-align: center;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .card .description {
+        padding: 15px;
+        text-align: justify;
+    }
+
+    .card .description .item {
+        padding: 10px;
+        list-style: none;
+        background-color: #aaa;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .card .description .item h4 {
+        margin-bottom: 7px;
+    }
+
+    .card .description .item em {
+        margin-bottom: 5px;
+    }
+
+    .card .description .item p {
+        margin-bottom: 5px;
+    }
 }
 
-#conteudo {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+@media screen and (min-width: 600px) {
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2em;
+        box-shadow: 0px 0px 5px #33333380;
+    }
 
-#principal {
-    display: flex;
-    flex-direction: column;
-}
+    main {
+        max-width: 950px;
+        padding: 20px;
+        margin: auto;
+        justify-items: center;
+    }
 
-#informacoes-pessoais {
-    display: flex;
-    background-color: #424242;
-    border-radius: 100px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-    color: #b8b8b8;
-}
+    section {
+        background-color: #bbb;
+        padding: 20px 0;
+        margin: 10px;
+        border-radius: 20px;
+    }
 
-#informacoes-pessoais a {
-    color: #aaaaaa;
-    text-decoration: none;
-    padding: 0 5px;
-    border-radius: 5px;
-}
+    .card-top {
+        box-shadow: 0px 0px 5px #33333380;
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .card-top img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: #333 solid 3px;
+    }
 
-#informacoes-pessoais a:hover {
-    text-decoration: underline;
-    color: rgb(75, 75, 75);
-    background-color: rgb(209, 209, 209);
-    transition: 0.3s ease-in-out;
-}
+    .card-top .informacoes {
+        padding: 10px;
+        display: inline-block;
+    }
 
-#informacoes-pessoais img {
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-    object-fit: cover;
-}
+    .card-top .informacoes h2 {
+        margin-bottom: 10px;
+    }
 
-#informacoes-pessoais h3 {
-    color: #ffffff;
-    background-color: #0f0f0f;
-    width: 12em;
-    padding: 10px;
-    border-radius: 0 100px 100px 0;
-}
+    .card-top .informacoes p {
+        margin-bottom: 3px;
+        text-align: left;
+    }
 
-#informacoes-pessoais p {
-    margin-left: 0;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
-}
+    .card-top .informacoes a {
+        text-decoration: none;
+        color: #555;
+        padding: 2px 5px;
+    }
 
-#informacoes {
-    margin: 10px 5px 5px 5px;
-    background-color: #cfcfcf;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #272727;
-}
+    .card-top .informacoes a:hover {
+        background-color: #555;
+        border-radius: 5px;
+        color: #bbb;
+    }
 
-#informacoes .titulo {
-    color: #d6d6d6;
-    margin-left: 0;
-    padding:0 0 0 1em;
-    border-radius: 0 10px 10px 0;
-    background-color: #505050;
-    width: 15em;
-}
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
 
-#informacoes .texto {
-    margin-left: 0;
-    padding:0 0 0 1em;
-    border-radius: 0 10px 10px 0;
-}
+    .card .title {
+        background-color: #333;
+        color: #fff;
+        width: 70%;
+        padding: 5px;
+        text-align: center;
+        border-radius: 0 10px 10px 0;
+    }
 
-#informacoes .caracteristica {
-    font-weight: bold;
-    color: #272727;
-}
+    .card .description {
+        padding: 15px;
+        text-align: justify;
+    }
 
-#informacoes .descricao {
-    color: #5a5a5a;
-    font-style: italic;
-}
+    .card .description .item {
+        padding: 10px;
+        list-style: none;
+        background-color: #aaa;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
 
-#informacoes .item {
-    margin-left: 0;
-    background-color: #b6b5b5;
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 20px;
-}
+    .card .description .item h4 {
+        margin-bottom: 7px;
+    }
 
+    .card .description .item em {
+        margin-bottom: 5px;
+    }
 
-
-#informacoes .item:hover {
-    background-color: #a3a3a3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
-}
-
-p {
-    font-size: large;
-    margin-left: 20px;
-    margin-right: 20px;
+    .card .description .item p {
+        margin-bottom: 5px;
+    }
 }
